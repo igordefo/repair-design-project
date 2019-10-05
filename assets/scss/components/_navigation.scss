@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 4.6rem;
+  }
+
+  &__link {
+    transition: all 0.3s;
+    &:hover {
+      color: $primary-color;
+    }
+
+    &--active {
+      color: $primary-color;
+    }
+  }
+
+  &__contacts {
+    font-weight: bold;
+  }
+
+  &__phone {
+    margin-right: 4.5rem;
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}

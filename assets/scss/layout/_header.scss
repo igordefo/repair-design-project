@@ -1,0 +1,73 @@
+.header {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: $background-color;
+
+  &__top {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 125.6rem;
+    margin: 0 auto;
+    padding: 2.3rem 0;
+    transform: translateX(-1rem);
+  }
+
+  &__hero {
+    display: flex;
+    margin: 0 auto;
+    max-width: 143.8rem;
+  }
+
+  &__network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.7%;
+    background-color: $background-color;
+
+    a {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6rem;
+    min-height: 70.7rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../assets/img/bg_hero.png);
+    background-position-x: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-family: 'Yeseva One';
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 5.391rem;
+    text-transform: uppercase;
+
+    span {
+      color: #e3b873;
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 47rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 3.094rem;
+    text-transform: none;
+  }
+
+  &__buttons > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
