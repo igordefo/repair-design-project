@@ -1,0 +1,17 @@
+.play-pause {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 67px;
+  height: 67px;
+  font-size: 0;
+  background: url(../assets/img/play.svg) no-repeat center, $primary-color;
+  background-position-x: 55%;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.72;
+  transition: all 0.2s ease-in-out;
+  z-index: 50;
+}

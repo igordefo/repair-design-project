@@ -169,6 +169,41 @@
           </div>
         </div>
       </section>
+      <section class="book">
+        <div class="book__wrapper">
+          <h2 class="heading heading--white">Online control</h2>
+          <span class="icon-wrap book__icon">          
+            <svg class="icon">
+              <use xlink:href="assets/img/sprite.svg#Group"></use>
+            </svg>
+          </span>
+          <div class="video">
+            <video poster="assets/img/video-poster.jpg"></video>
+            <button class="play-pause"></button>
+          </div>
+          <p class="book__text">
+            At each facility, a camera is installed that broadcasts the progress
+            of work on the clock. At any time, you can go to our website and
+            monitor the progress of work in your apartment. You can watch the
+            live broadcast from one of our facilities! Leave a request below and
+            you will receive a link to the broadcast.
+          </p>
+          <form action="POST" class="form">
+            <label for="name">
+              Name
+              <input name="name" type="text" placeholder="What is your name:" />
+            </label>
+            <label for="phone">
+              Phone
+              <input name="phone" type="tel" placeholder="Your phone number:"/>
+            </label>
+            <button class="btn">Submit</button>
+            <div class="break"></div>
+            <input type="checkbox" name="agree" id="agree" checked />
+            <label for="agree">I agree to the processing of personal data</label>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
