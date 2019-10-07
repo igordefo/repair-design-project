@@ -14,7 +14,9 @@
   }
 
   &__hero {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 143.8rem;
   }
@@ -22,11 +24,11 @@
   &__network {
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 5.7%;
     background-color: $background-color;
 
     a {
+      position: absolute;
       transform: rotate(90deg);
     }
   }
