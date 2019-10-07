@@ -1,0 +1,8 @@
+@mixin title {
+  font-family: $font-family-title;
+  color: $primary-color;
+}
+
+@mixin transition {
+  transition: all ease-out 0.3s;
+}

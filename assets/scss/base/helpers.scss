@@ -8,3 +8,8 @@
   position: absolute;
   width: 1px;
 }
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
