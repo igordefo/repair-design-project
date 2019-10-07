@@ -1,0 +1,59 @@
+.slider {
+  &__item {
+    display: flex;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    flex: 1 0 34%;
+  }
+
+  &__text {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    line-height: 2.953rem;
+  }
+
+  &__details {
+    margin-bottom: 12rem;
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.531rem;
+      text-transform: uppercase;
+      @include title;
+    }
+
+    &-top,
+    &-bottom {
+      display: flex;
+
+      div {
+        width: 50%;
+      }
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-top {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__photo {
+    flex: 2 0 auto;
+  }
+
+  &__gallery {
+    display: flex;
+  }
+
+  &__picture {
+    margin-right: 2rem;
+  }
+}

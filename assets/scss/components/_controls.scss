@@ -1,0 +1,45 @@
+.controls {
+  display: flex;
+  align-items: center;
+
+  &__right {
+    @include transition;
+    &:hover {
+      transform: translateX(5px);
+    }
+  }
+
+  &__left {
+    @include transition;
+    transform: scale(-1);
+
+    &:hover {
+      transform: scale(-1) translateX(5px);
+    }
+  }
+
+  &__dots {
+    display: flex;
+    align-items: center;
+    margin: 0 2.8rem;
+  }
+
+  &__dot {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    @include transition;
+
+    &:not(:last-child) {
+      margin-right: 1.7rem;
+    }
+
+    &--active,
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
