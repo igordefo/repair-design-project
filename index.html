@@ -607,6 +607,26 @@
           </ul>
         </div>
       </section>
+      <form action="POST" class="question-form call-form">
+        <fieldset>
+          <legend class="question-form__title">Have any questions?</legend>
+          <div class="row">
+            <label for="name">
+              Name
+              <input name="name" type="text" placeholder="What is your name:">
+            </label>
+            <label for="phone">
+              Phone
+              <input name="phone" type="tel" placeholder="Your phone number:">
+            </label>
+          </div>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Your mail">
+          <input class="checkbox" type="checkbox" name="subm" id="subm" checked />
+          <label class="checkbox-label" for="subm">I agree to the processing of personal data</label>
+        </fieldset>
+        <button class="btn question-form__btn call-form__btn">Submit</button>
+      </form>
     </main>
   </body>
 </html>

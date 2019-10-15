@@ -1,0 +1,98 @@
+.call-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2.8rem 4.9rem;
+  min-width: 50.6rem;
+  background-color: #000;
+  color: #fff;
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  legend {
+    margin-bottom: 3.8rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.461rem;
+    font-weight: 900;
+  }
+
+  input[type='text'],
+  input[type='tel'],
+  input[type='email'] {
+    color: #fff;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 4rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    outline: 0;
+
+    &::placeholder {
+      color: #fff;
+      font-family: 'Futura Book C';
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.531rem;
+    }
+  }
+
+  input[type='email']:nth-child(7) {
+    margin-bottom: 1.7rem;
+  }
+
+  label:not(:last-of-type) {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    margin-top: 3.5rem;
+    align-self: flex-end;
+  }
+
+  [type='checkbox'],
+  [for='agree'] {
+    display: flex;
+    align-items: center;
+  }
+
+  [type='checkbox'] {
+    display: none;
+  }
+
+  [for='agree']::before {
+    content: '';
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 0.8rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 0.1rem;
+    background-color: $primary-color;
+  }
+
+  input[type='checkbox']:checked + label:before {
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.03657 0.687256L3.32504 6.39879L0.728882 3.80264' stroke='white' stroke-width='1.5'/%3e%3c/svg%3e ");
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
