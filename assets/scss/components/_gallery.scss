@@ -1,0 +1,17 @@
+.gallery {
+  position: absolute;
+  top: -18rem;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 75rem;
+  grid-gap: 4rem;
+
+  &__image:nth-child(2) {
+    margin-top: -7.4rem;
+  }
+
+  &__image:nth-child(4) {
+    margin-top: -35.7rem;
+  }
+}
