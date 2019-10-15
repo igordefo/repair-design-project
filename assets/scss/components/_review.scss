@@ -1,0 +1,70 @@
+.review {
+  display: flex;
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem 3.1rem 8.5rem 2rem;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.04);
+
+    &:not(:last-child) {
+      margin-right: 5.4rem;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.1rem;
+  }
+
+  &__name {
+    margin-left: 2.3rem;
+    max-width: 17.8rem;
+    color: #181818;
+    font-family: $font-family-title;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.32rem;
+  }
+
+  &__text {
+    color: #959595;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+  }
+
+  &__details {
+    position: absolute;
+    left: 0;
+    bottom: -2.8rem;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    min-width: 29.4rem;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(227, 184, 115, 0.5);
+
+    & > div:first-child {
+      border-right: 1px solid #fff;
+    }
+
+    & > * {
+      padding: 1.1rem 1.9rem 1.1rem 1.7rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: $font-family-title;
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 2.391rem;
+      text-transform: uppercase;
+
+      img {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}

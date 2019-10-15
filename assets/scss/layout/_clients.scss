@@ -1,0 +1,15 @@
+.clients {
+  color: #181818;
+  padding-bottom: 38.1rem;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(../assets/img/bg_project.png) no-repeat;
+  background-position: center bottom;
+
+  &__description {
+    margin-bottom: 3.8rem;
+    text-align: center;
+  }
+}
