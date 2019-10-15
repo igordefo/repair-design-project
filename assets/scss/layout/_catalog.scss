@@ -1,0 +1,41 @@
+.catalog {
+  padding-top: 13.8rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/img/bg_catalog.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 1;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 4.7rem;
+  }
+
+  &__item {
+    margin-bottom: 2.6rem;
+  }
+
+  &__link {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    @include transition;
+
+    &--active,
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      box-shadow: 0px 1px 0px 0px rgba(227, 184, 115, 1);
+    }
+
+    &:active {
+      color: darken($primary-color, 10%);
+    }
+  }
+}
