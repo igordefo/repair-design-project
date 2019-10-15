@@ -38,34 +38,9 @@
     }
   }
 
-  [type='checkbox'],
   [for='agree'] {
     display: flex;
     align-items: center;
     margin-top: 3.7rem;
-  }
-
-  [type='checkbox'] {
-    display: none;
-  }
-
-  [for='agree']::before {
-    content: '';
-    display: inline-flex;
-    justify-content: center;
-    margin-right: 0.8rem;
-    width: 1.9rem;
-    height: 1.9rem;
-    border-radius: 0.1rem;
-    background-color: $primary-color;
-  }
-
-  input[type='checkbox']:checked + label:before {
-    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.03657 0.687256L3.32504 6.39879L0.728882 3.80264' stroke='white' stroke-width='1.5'/%3e%3c/svg%3e ");
-  }
-
-  .check-flex {
-    display: flex;
-    align-items: flex-start;
   }
 }

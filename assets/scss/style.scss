@@ -12,10 +12,30 @@
 // Vendors
 @import './vendors/reset.scss';
 
-// Blocks
-@import './layout/header';
-
 // Components
 @import './components/navigation';
 @import './components/logo';
 @import './components/button';
+@import './components/controls';
+@import './components/play';
+@import './components/form';
+@import './components/checkbox';
+@import './components/card';
+@import './components/call-form';
+@import './components/gallery';
+@import './components/slider-steps';
+@import './components/review';
+@import './components/question-form';
+
+// Blocks
+@import './layout/header';
+@import './layout/projects';
+@import './layout/slider';
+@import './layout/book';
+@import './layout/repair';
+@import './layout/feature';
+@import './layout/catalog';
+@import './layout/design';
+@import './layout/steps';
+@import './layout/team';
+@import './layout/clients';

@@ -20,8 +20,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -41,6 +41,12 @@ body {
 ul[class],
 ol[class] {
   list-style: none;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: currentColor;
 }
 
 a:not([class]) {

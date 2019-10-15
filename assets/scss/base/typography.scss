@@ -26,15 +26,14 @@ body {
 }
 
 .heading {
+  margin-bottom: 1.3rem;
   font-family: $font-family-title;
   font-size: 2rem;
   font-weight: 400;
   line-height: 2.813rem;
   text-transform: uppercase;
-
-  &--black {
-    color: $background-color;
-  }
+  text-align: center;
+  color: $background-color;
 
   &--primary {
     color: $primary-color;
@@ -47,13 +46,15 @@ body {
 
 .icon {
   margin: 0 0.8rem;
-  width: auto;
+  width: 2.9rem;
   height: 2.9rem;
 }
 
 .icon-wrap {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 2.3rem;
   &::before,
   &::after {
     content: '';
@@ -72,4 +73,13 @@ body {
   height: 2.9rem;
   border: 0.2rem solid #e3b873;
   border-radius: 50%;
+
+  &--big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3b873;
+    width: 7.3rem;
+    height: 7.3rem;
+  }
 }
