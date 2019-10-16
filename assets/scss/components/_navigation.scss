@@ -1,9 +1,11 @@
 .navigation {
   display: flex;
   align-items: center;
+  font-size: 1.4rem;
 
   &__list {
     display: flex;
+    text-transform: uppercase;
   }
 
   &__item:not(:last-child) {
@@ -22,6 +24,7 @@
   }
 
   &__contacts {
+    font-size: 1.4rem;
     font-weight: bold;
   }
 

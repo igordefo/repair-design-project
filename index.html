@@ -610,7 +610,7 @@
       <form action="POST" class="question-form call-form">
         <fieldset>
           <legend class="question-form__title">Have any questions?</legend>
-          <div class="row">
+          <div class="row justify-content-between">
             <label for="name">
               Name
               <input name="name" type="text" placeholder="What is your name:">
@@ -627,6 +627,53 @@
         </fieldset>
         <button class="btn question-form__btn call-form__btn">Submit</button>
       </form>
+      <section class="contact">
+        <p class="contact__title">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
+          Decorum Tel +7 (928) 768 32 29</p>
+        <div class="contact__links">
+          <a href="#" class="contact__link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13"><g><g><g><g/><g/></g></g></g></svg></a>
+          <a href="#" class="contact__link"></a>
+        </div>
+        <div id="map" class="map"></div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="header__top">
+        <h1 class="logo">IC "Repair Design Project"</h1>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation__link--active"
+                >Home</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Projects</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Measurement</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Team</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Reviews</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navigation__contacts">
+          <a class="navigation__phone" href="tel:+79287683239"
+            >+7 (928) 768-32-39</a
+          >
+          <button class="btn">Request a call</button>
+        </div>
+      </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f11229cb-b809-4dfd-8447-10fed030e362" type="text/javascript"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="placemark.js" type="text/javascript"></script>
   </body>
 </html>
