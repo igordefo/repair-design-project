@@ -47,7 +47,8 @@
     margin-bottom: 1.7rem;
   }
 
-  label:not(:last-of-type) {
+  label:not(:last-of-type),
+  label:nth-child(2) {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.5rem;
   }

@@ -15,7 +15,7 @@
 
   &__info {
     position: relative;
-    padding: 2.5rem 0 5rem 3.1rem;
+    padding: 2rem 0 5rem 3.1rem;
     margin: -12.7rem auto 0 auto;
     max-width: 33rem;
     color: #959595;
@@ -45,9 +45,6 @@
     span {
       display: block;
       margin-left: -0.5rem;
-    }
-    &:not(:last-child) {
-      margin-bottom: 0.5rem;
     }
   }
 

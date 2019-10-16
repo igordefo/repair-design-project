@@ -73,6 +73,9 @@ body {
   height: 2.9rem;
   border: 0.2rem solid #e3b873;
   border-radius: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='7' viewBox='0 0 11 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.72133 1.12712L5.40812 5.40918L1.09491 1.12712' stroke='%23E3B873' stroke-width='1.5'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
 
   &--big {
     display: flex;
