@@ -1,14 +1,9 @@
 .slider {
-  &__item {
-    display: flex;
-  }
-
   &__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: inline-block;
     margin-right: 5rem;
-    flex: 1 0 34%;
+    width: calc(34%);
+    vertical-align: top;
   }
 
   &__text {
@@ -46,11 +41,14 @@
   }
 
   &__photo {
-    flex: 2 0 auto;
+    position: absolute;
+    display: inline-block;
+    width: calc(72.5% - 5rem);
   }
 
+  .slick-track,
   &__gallery {
-    display: flex;
+    max-height: 48.3rem;
   }
 
   &__picture {

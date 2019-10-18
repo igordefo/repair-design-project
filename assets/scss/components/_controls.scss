@@ -11,9 +11,13 @@
 
   &__left {
     @include transition;
-    transform: scale(-1);
 
-    &:hover {
+    img {
+      @include transition;
+      transform: scale(-1);
+    }
+
+    img:hover {
       transform: scale(-1) translateX(5px);
     }
   }
@@ -21,25 +25,97 @@
   &__dots {
     display: flex;
     align-items: center;
-    margin: 0 2.8rem;
+    margin: 0 1rem;
   }
+}
 
-  &__dot {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    @include transition;
+.slick-dots li button:before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  @include transition;
 
-    &:not(:last-child) {
-      margin-right: 1.7rem;
-    }
-
-    &--active,
-    &:hover {
-      background-color: #fff;
-    }
+  &:not(:last-child) {
+    margin-right: 1.7rem;
   }
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.projectList li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  margin-right: 5.5rem;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #fff;
+}
+
+.projectList li button::before {
+  display: block;
+  content: 'Rostov-on-Don, Admiral';
+  color: rgba(255, 255, 255, 0.3);
+  font-family: $font-family-title;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.969rem;
+  text-transform: uppercase;
+  transition: all ease-out 0.2s;
+}
+
+#slick-slide-control01::before {
+  content: 'Sochi Thieves';
+}
+
+#slick-slide-control02::before {
+  content: 'Rostov-on-Don Patriotic';
+}
+
+.projectList {
+  display: flex !important ;
+}
+
+.projectList li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.projectList li.slick-active button:before {
+  color: $primary-color;
+  box-shadow: 0px 1px 0px 0px rgba(227, 184, 115, 1);
 }

@@ -13,6 +13,14 @@
     margin: 1.5rem;
   }
 
+  &__image-box {
+    overflow: hidden;
+  }
+
+  &__image {
+    @include transition;
+  }
+
   &__info {
     position: relative;
     padding: 2rem 0 5rem 3.1rem;
@@ -59,4 +67,8 @@
     text-transform: uppercase;
     box-shadow: 0.5rem 0.5rem 1rem rgba(227, 184, 115, 0.3);
   }
+}
+
+.card__item:hover .card__image {
+  transform: scale(1.1);
 }

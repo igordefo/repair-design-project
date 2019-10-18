@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="dist/slick.css" />
     <link rel="stylesheet" href="dist/style.css" />
     <title>IC "Repair Design Project"</title>
   </head>
@@ -19,19 +20,19 @@
               >
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Projects</a>
+              <a href="#project" class="navigation__link">Projects</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Measurement</a>
+              <a href="#measurement" class="navigation__link">Measurement</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Team</a>
+              <a href="#team" class="navigation__link">Team</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Reviews</a>
+              <a href="#reviews" class="navigation__link">Reviews</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Contacts</a>
+              <a href="#contact" class="navigation__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +46,7 @@
       <div class="header__hero">
         <div class="header__network">
           <a href="#" class="logo logo--instagram">Instagram</a>
-          <button class="btn btn--bottom"><span>Scroll Down</span><span class="round"></span></button>
+          <a href="#project" class="btn btn--bottom"><span>Scroll Down</span><span class="round"></span></a>
         </div>
         <div class="header__wrapper">
           <div class="header__promo">
@@ -70,105 +71,187 @@
       </div>
     </header>
     <main class="main">
-      <section class="projects">
-        <div class="slider container">
-          <div class="slider__item">
-            <div class="slider__info">
-              <h2 class="title">Completed projects</h2>
-              <p class="slider__text">
-                Only a small part of the work performed by our company is
-                presented on the site. For 14 years on in the construction
-                market we have made happy more than 1000 families
-              </p>
-              <div class="slider__details">
-                <div class="slider__details-top">
-                  <div>
-                    <p>City:</p>
-                    <span
-                      >Rostov-on-Don <br />
-                      LCD admiral</span
-                    >
+      <div class="wrapper">
+        <section class="projects" id="project">
+          <div class="container">
+            <ul class="projects__list">
+              <!-- <li class="projects__item">
+                <a href="#" class="projects__slide projects__slide--active"
+                  >Rostov-on-Don, Admiral</a
+                >
+              </li>
+              <li class="projects__item">
+                <a href="#" class="projects__slide">Sochi Thieves</a>
+              </li>
+              <li class="projects__item">
+                <a href="#" class="projects__slide"
+                  >Rostov-on-Don Patriotic</a
+                >
+              </li> -->
+            </ul>
+            <div class="slider container">
+              <div class="slider__item">
+                <div class="slider__info carouselItem">
+                  <div class="slider__info-item">
+                    <h2 class="title">Completed projects</h2>
+                    <p class="slider__text">
+                      Only a small part of the work performed by our company is
+                      presented on the site. For 14 years on in the construction
+                      market we have made happy more than 1000 families
+                    </p>
+                    <div class="slider__details">
+                      <div class="slider__details-top">
+                        <div>
+                          <p>City:</p>
+                          <span
+                            >Rostov-on-Don <br />
+                            LCD admiral</span
+                          >
+                        </div>
+                        <div>
+                          <p>apartment area:</p>
+                          <span>81 m2</span>
+                        </div>
+                      </div>
+                      <div class="slider__details-bottom">
+                        <div>
+                          <p>Repair time:</p>
+                          <span>3.5 months</span>
+                        </div>
+                        <div>
+                          <p>Repair Cost:</p>
+                          <span>Upon request</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <p>apartment area:</p>
-                    <span>81 m2</span>
+                  <div class="slider__info-item">
+                    <h2 class="title">Completed projects</h2>
+                    <p class="slider__text">
+                      Only a small part of the work performed by our company is
+                      presented on the site.
+                    </p>
+                    <div class="slider__details">
+                      <div class="slider__details-top">
+                        <div>
+                          <p>City:</p>
+                          <span
+                            >Sochi Thieves</span
+                          >
+                        </div>
+                        <div>
+                          <p>apartment area:</p>
+                          <span>123 m2</span>
+                        </div>
+                      </div>
+                      <div class="slider__details-bottom">
+                        <div>
+                          <p>Repair time:</p>
+                          <span>4 months</span>
+                        </div>
+                        <div>
+                          <p>Repair Cost:</p>
+                          <span>Upon request</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__info-item">
+                    <h2 class="title">Completed projects</h2>
+                    <p class="slider__text">
+                      Only a small part of the work performed by our company is
+                      presented on the site.
+                    </p>
+                    <div class="slider__details">
+                      <div class="slider__details-top">
+                        <div>
+                          <p>City:</p>
+                          <span
+                            >Rostov-on-Don <br> Patriotic</span
+                          >
+                        </div>
+                        <div>
+                          <p>apartment area:</p>
+                          <span>210 m2</span>
+                        </div>
+                      </div>
+                      <div class="slider__details-bottom">
+                        <div>
+                          <p>Repair time:</p>
+                          <span>6 months</span>
+                        </div>
+                        <div>
+                          <p>Repair Cost:</p>
+                          <span>Upon request</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="slider__details-bottom">
-                  <div>
-                    <p>Repair time:</p>
-                    <span>3.5 months</span>
-                  </div>
-                  <div>
-                    <p>Repair Cost:</p>
-                    <span>Upon request</span>
+                <div class="slider__photo">
+                  <div class="slider__gallery carouselItem">
+                    <picture class="slider__picture">
+                      <source
+                        srcset="assets/img/project-1.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="assets/img/project-1.jpg"
+                        media="(max-width: 768px)"
+                      />
+                      <img
+                        src="assets/img/project-1.png"
+                        alt="Rostov-on-Don LCD admiral"
+                      />
+                    </picture>
+                    <picture class="slider__picture">
+                      <source
+                        srcset="assets/img/project-2.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="assets/img/project-2.jpg"
+                        media="(max-width: 768px)"
+                      />
+                      <img
+                        src="assets/img/project-2.png"
+                        alt="Rostov-on-Don LCD admiral"
+                      />
+                    </picture>
+                    <picture class="slider__picture">
+                      <source
+                        srcset="assets/img/project-1.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="assets/img/project-1.jpg"
+                        media="(max-width: 768px)"
+                      />
+                      <img
+                        src="assets/img/project-1.png"
+                        alt="Rostov-on-Don LCD admiral"
+                      />
+                    </picture>
                   </div>
                 </div>
-              </div>
-              <div class="controls">
-                <a href="#" class="controls__left"
-                  ><img src="assets/img/arrow.svg" alt="Left"
-                /></a>
-                <div class="controls__dots">
-                  <span class="controls__dot controls__dot--active"></span>
-                  <span class="controls__dot"></span>
-                  <span class="controls__dot"></span>
-                </div>
-                <a href="#" class="controls__right"
-                  ><img src="assets/img/arrow.svg" alt="Left"
-                /></a>
               </div>
             </div>
-            <div class="slider__photo">
-              <ul class="projects__list">
-                <li class="projects__item">
-                  <a href="#" class="projects__slide projects__slide--active"
-                    >Rostov-on-Don, Admiral</a
-                  >
-                </li>
-                <li class="projects__item">
-                  <a href="#" class="projects__slide">Sochi Thieves</a>
-                </li>
-                <li class="projects__item">
-                  <a href="#" class="projects__slide"
-                    >Rostov-on-Don Patriotic</a
-                  >
-                </li>
-              </ul>
-              <div class="slider__gallery">
-                <picture class="slider__picture">
-                  <source
-                    srcset="assets/img/project-1.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="assets/img/project-1.jpg"
-                    media="(max-width: 768px)"
-                  />
-                  <img
-                    src="assets/img/project-1.png"
-                    alt="Rostov-on-Don LCD admiral"
-                  />
-                </picture>
-                <picture class="slider__picture">
-                  <source
-                    srcset="assets/img/project-2.webp"
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="assets/img/project-2.jpg"
-                    media="(max-width: 768px)"
-                  />
-                  <img
-                    src="assets/img/project-2.png"
-                    alt="Rostov-on-Don LCD admiral"
-                  />
-                </picture>
+            <div class="controls">
+              <a class="controls__left"
+                ><img src="assets/img/arrow.svg" alt="Left"
+              /></a>
+              <div class="controls__dots slick-dots">
+                <span class="controls__dot controls__dot--active"></span>
+                <span class="controls__dot"></span>
+                <span class="controls__dot"></span>
               </div>
+              <a class="controls__right"
+                ><img src="assets/img/arrow.svg" alt="Left"
+              /></a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section class="book">
         <div class="book__wrapper">
           <h2 class="heading heading--white">Online control</h2>
@@ -177,8 +260,9 @@
               <use xlink:href="assets/img/sprite.svg#Group"></use>
             </svg>
           </span>
-          <div class="video">
-            <video poster="assets/img/video-poster.jpg"></video>
+          <div class="video overlay" data-video-id="tgbNymZ7vqY">
+
+            <img src="assets/img/video-poster.jpg" alt="custom-preview">
             <button class="play-pause"></button>
           </div>
           <p class="book__text">
@@ -215,7 +299,9 @@
           <div class="row">
             <ul class="card__list">
               <li class="card__item">
-                <img src="assets/img/repair-1.png" alt="Repair photo" class="card__image">
+                <div class="card__image-box">
+                  <img src="assets/img/repair-1.png" alt="Repair photo" class="card__image">
+                </div>
                 <div class="card__info">
                   <h3 class="card__title">Redecorating</h3>
                   <ul class="card__info-list">
@@ -231,7 +317,9 @@
                 </div>
               </li>
               <li class="card__item">
-                <img src="assets/img/repair-2.png" alt="Repair photo" class="card__image">
+                <div class="card__image-box">
+                  <img src="assets/img/repair-2.png" alt="Repair photo" class="card__image">
+                </div>
                 <div class="card__info">
                   <h3 class="card__title">Overhaul</h3>
                   <ul class="card__info-list">
@@ -247,7 +335,9 @@
                 </div>
               </li>
               <li class="card__item">
-                <img src="assets/img/repair-3.png" alt="Repair photo" class="card__image">
+                <div class="card__image-box">
+                  <img src="assets/img/repair-3.png" alt="Repair photo" class="card__image">
+                </div>
                 <div class="card__info">
                   <h3 class="card__title">Designer Repair</h3>
                   <ul class="card__info-list">
@@ -355,7 +445,7 @@
           </div>
         </div>
       </section>
-      <section class="design">
+      <section class="design" id="measurement">
         <h2 class="heading design__heading">Design project</h2>
         <span class="icon-wrap">          
           <svg class="icon">
@@ -369,7 +459,9 @@
         <div class="container">
           <ul class="card__list design__list">
             <li class="card__item">
-              <img src="assets/img/repair-1.png" alt="Repair photo" class="card__image">
+              <div class="card__image-box">
+                <img src="assets/img/repair-1.png" alt="Repair photo" class="card__image">
+              </div>
               <div class="card__info">
                 <h3 class="card__title">Mini</h3>
                 <ul class="card__info-list">
@@ -382,7 +474,9 @@
               </div>
             </li>
             <li class="card__item">
-              <img src="assets/img/repair-3.png" alt="Repair photo" class="card__image">
+              <div class="card__image-box">
+                <img src="assets/img/repair-3.png" alt="Repair photo" class="card__image">
+              </div>
               <div class="card__info">
                 <h3 class="card__title">Standard</h3>
                 <ul class="card__info-list">
@@ -398,7 +492,9 @@
               </div>
             </li>
             <li class="card__item">
-              <img src="assets/img/repair-2.png" alt="Repair photo" class="card__image">
+              <div class="card__image-box">
+                <img src="assets/img/repair-2.png" alt="Repair photo" class="card__image">
+              </div>
               <div class="card__info">
                 <h3 class="card__title">Full</h3>
                 <ul class="card__info-list">
@@ -495,7 +591,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <h2 class="heading heading--white team__heading">team project</h2>
         <span class="icon-wrap">          
           <svg class="icon">
@@ -536,7 +632,7 @@
             with work experience of 6 years. <br>
             We do not have laborers and guest workers, each employee carries out <br> work corresponding to his specialty.</p>
       </section>
-      <section class="clients">
+      <section class="clients" id="reviews">
         <h2 class="heading clients__heading">clients project</h2>
         <span class="icon-wrap">          
           <svg class="icon">
@@ -627,7 +723,7 @@
         </fieldset>
         <button class="btn question-form__btn call-form__btn">Submit</button>
       </form>
-      <section class="contact">
+      <section class="contact" id="contact">
         <p class="contact__title">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
           Decorum Tel +7 (928) 768 32 29</p>
         <div class="contact__links">
@@ -672,7 +768,11 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f11229cb-b809-4dfd-8447-10fed030e362" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="placemark.js" type="text/javascript"></script>
   </body>

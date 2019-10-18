@@ -23,19 +23,20 @@
   .video {
     position: relative;
 
-    video {
+    iframe {
       width: 81.7rem;
       height: 43.4rem;
+      border: 0;
     }
   }
 
-  .video::before {
+  .overlay::before {
     content: '';
     position: absolute;
     top: 0;
-    bottom: 0.7rem;
+    bottom: -1px;
     left: 0;
-    right: 0;
+    right: -1px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
   }
