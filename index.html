@@ -40,7 +40,7 @@
           <a class="navigation__phone" href="tel:+79287683239"
             >+7 (928) 768-32-39</a
           >
-          <button class="btn">Request a call</button>
+          <button data-modal="call" class="btn">Request a call</button>
         </div>
       </div>
       <div class="header__hero">
@@ -60,7 +60,7 @@
               work
             </p>
             <div class="header__buttons">
-              <button class="btn">Calculate your post</button>
+              <button data-modal="call" class="btn">Calculate your post</button>
               <button class="btn btn--transparent">
                 Submit your application
               </button>
@@ -128,8 +128,9 @@
                   <div class="slider__info-item">
                     <h2 class="title">Completed projects</h2>
                     <p class="slider__text">
-                      Only a small part of the work performed by our company is
-                      presented on the site.
+                      For 14 years on in the construction
+                      market we have made happy more than 1000 families. Only a small part of the work performed by our company is
+                      presented on the site. 
                     </p>
                     <div class="slider__details">
                       <div class="slider__details-top">
@@ -159,7 +160,8 @@
                   <div class="slider__info-item">
                     <h2 class="title">Completed projects</h2>
                     <p class="slider__text">
-                      Only a small part of the work performed by our company is
+                      Only a small part of for 14 years on in the construction
+                      market we have made happy more than 1000 families work performed by our company is
                       presented on the site.
                     </p>
                     <div class="slider__details">
@@ -436,10 +438,26 @@
                 </ul>
               </div>
               <div class="gallery">
-                <img src="assets/img/gallery-1.png" alt="Gallery" class="gallery__image">
-                <img src="assets/img/gallery-2.png" alt="Gallery" class="gallery__image">
-                <img src="assets/img/gallery-3.png" alt="Gallery" class="gallery__image">
-                <img src="assets/img/gallery-4.png" alt="Gallery" class="gallery__image">
+                <picture class="gallery__image">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-1.jpg">
+                  <img src="assets/img/gallery-1.png" alt="Gallery">
+                </picture>
+                <picture class="gallery__image">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-2.jpg">
+                  <img src="assets/img/gallery-2.png" alt="Gallery">
+                </picture>
+                <picture class="gallery__image">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-3.jpg">
+                  <img src="assets/img/gallery-3.png" alt="Gallery">
+                </picture>
+                <picture class="gallery__image">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-4.jpg">
+                  <img src="assets/img/gallery-4.png" alt="Gallery">
+                </picture>
+                <picture class="gallery__image gallery__image--hide">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-2.jpg">
+                  <img src="assets/img/bg_catalog.png" alt="Gallery">
+                </picture>
               </div>
             </div>
           </div>
@@ -457,65 +475,67 @@
           but also significantly reduces the cost of materials and reduces the time of repair work.
         </p>
         <div class="container">
-          <ul class="card__list design__list">
-            <li class="card__item">
-              <div class="card__image-box">
-                <img src="assets/img/repair-1.png" alt="Repair photo" class="card__image">
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Mini</h3>
-                <ul class="card__info-list">
-                  <li class="card__info-item"><span>Measurement drawing</span></li>
-                  <li class="card__info-item"><span>Redevelopment</span></li>
-                  <li class="card__info-item"><span>Layout of furniture</span></li>
-                  <li class="card__info-item"><span>Plumbing plan. equipment</span></li>
-                </ul>
-                <button class="btn btn--title card__btn">150 rub / m2</button>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card__image-box">
-                <img src="assets/img/repair-3.png" alt="Repair photo" class="card__image">
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Standard</h3>
-                <ul class="card__info-list">
-                  <li class="card__info-item"><span>Measurement drawing</span></li>
-                  <li class="card__info-item"><span>Redevelopment</span></li>
-                  <li class="card__info-item"><span>Layout of furniture</span></li>
-                  <li class="card__info-item"><span>Plumbing plan. equipment</span></li>
-                  <li class="card__info-item"><span>Floor Plan</span></li>
-                  <li class="card__info-item"><span>Electricians plan</span></li>
-                  <li class="card__info-item"><span>Lighting plan</span></li>
-                </ul>
-                <button class="btn btn--title card__btn">400 rub / m2</button>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card__image-box">
-                <img src="assets/img/repair-2.png" alt="Repair photo" class="card__image">
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Full</h3>
-                <ul class="card__info-list">
-                  <li class="card__info-item"><span>Measurement drawing</span></li>
-                  <li class="card__info-item"><span>Redevelopment</span></li>
-                  <li class="card__info-item"><span>Layout of furniture</span></li>
-                  <li class="card__info-item"><span>Plumbing plan. equipment</span></li>
-                  <li class="card__info-item"><span>Floor Plan</span></li>
-                  <li class="card__info-item"><span>Electricians plan</span></li>
-                  <li class="card__info-item"><span>Lighting plan</span></li>
-                  <li class="card__info-item"><span>Wall reamers</span></li>
-                  <li class="card__info-item"><span>3D visualization</span></li>
-                  <li class="card__info-item"><span>Bill of materials/span></li>
-                  <li class="card__info-item"><span>Departure for a selection of materials</span></li>
-                  <li class="card__info-item"><span>Furniture selection
-                  </span></li>
-                </ul>
-                <button class="btn btn--title card__btn">900 rub / m2</button>
-              </div>
-            </li>
-          </ul>
+          <div class="row">
+            <ul class="card__list design__list">
+              <li class="card__item">
+                <div class="card__image-box">
+                  <img src="assets/img/repair-1.png" alt="Repair photo" class="card__image">
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Mini</h3>
+                  <ul class="card__info-list">
+                    <li class="card__info-item"><span>Measurement drawing</span></li>
+                    <li class="card__info-item"><span>Redevelopment</span></li>
+                    <li class="card__info-item"><span>Layout of furniture</span></li>
+                    <li class="card__info-item"><span>Plumbing plan. equipment</span></li>
+                  </ul>
+                  <button class="btn btn--title card__btn">150 rub / m2</button>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card__image-box">
+                  <img src="assets/img/repair-3.png" alt="Repair photo" class="card__image">
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Standard</h3>
+                  <ul class="card__info-list">
+                    <li class="card__info-item"><span>Measurement drawing</span></li>
+                    <li class="card__info-item"><span>Redevelopment</span></li>
+                    <li class="card__info-item"><span>Layout of furniture</span></li>
+                    <li class="card__info-item"><span>Plumbing plan. equipment</span></li>
+                    <li class="card__info-item"><span>Floor Plan</span></li>
+                    <li class="card__info-item"><span>Electricians plan</span></li>
+                    <li class="card__info-item"><span>Lighting plan</span></li>
+                  </ul>
+                  <button class="btn btn--title card__btn">400 rub / m2</button>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card__image-box">
+                  <img src="assets/img/repair-2.png" alt="Repair photo" class="card__image">
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Full</h3>
+                  <ul class="card__info-list">
+                    <li class="card__info-item"><span>Measurement drawing</span></li>
+                    <li class="card__info-item"><span>Redevelopment</span></li>
+                    <li class="card__info-item"><span>Layout of furniture</span></li>
+                    <li class="card__info-item"><span>Plumbing plan. equipment</span></li>
+                    <li class="card__info-item"><span>Floor Plan</span></li>
+                    <li class="card__info-item"><span>Electricians plan</span></li>
+                    <li class="card__info-item"><span>Lighting plan</span></li>
+                    <li class="card__info-item"><span>Wall reamers</span></li>
+                    <li class="card__info-item"><span>3D visualization</span></li>
+                    <li class="card__info-item"><span>Bill of materials/span></li>
+                    <li class="card__info-item"><span>Departure for a selection of materials</span></li>
+                    <li class="card__info-item"><span>Furniture selection
+                    </span></li>
+                  </ul>
+                  <button class="btn btn--title card__btn">900 rub / m2</button>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="steps">
@@ -574,20 +594,19 @@
             </div>
           </div>
           <div class="steps__controls controls">
-            <a href="#" class="controls__left"
-              ><img src="assets/img/arrow.svg" alt="Left"
-            /></a>
-            <div class="controls__dots">
-              <span class="controls__dot controls__dot--active"></span>
-              <span class="controls__dot"></span>
-              <span class="controls__dot"></span>
-              <span class="controls__dot"></span>
-              <span class="controls__dot"></span>
-              <span class="controls__dot"></span>
+            <div class="controls">
+              <a class="controls__left"
+                ><img src="assets/img/arrow.svg" alt="Left"
+              /></a>
+              <div class="controls__dots slick-dots">
+                <span class="controls__dot slick-active  controls__dot--active"></span>
+                <span class="controls__dot"></span>
+                <span class="controls__dot"></span>
+              </div>
+              <a class="controls__right"
+                ><img src="assets/img/arrow.svg" alt="Left"
+              /></a>
             </div>
-            <a href="#" class="controls__right"
-              ><img src="assets/img/arrow.svg" alt="Left"
-            /></a>
           </div>
         </div>
       </section>
@@ -706,12 +725,12 @@
       <form action="POST" class="question-form call-form">
         <fieldset>
           <legend class="question-form__title">Have any questions?</legend>
-          <div class="row justify-content-between">
-            <label for="name">
+          <div class="question-form__input-box row justify-content-between">
+            <label class="question-form__input" for="name">
               Name
               <input name="name" type="text" placeholder="What is your name:">
             </label>
-            <label for="phone">
+            <label class="question-form__input" for="phone">
               Phone
               <input name="phone" type="tel" placeholder="Your phone number:">
             </label>
@@ -727,7 +746,7 @@
         <p class="contact__title">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
           Decorum Tel +7 (928) 768 32 29</p>
         <div class="contact__links">
-          <a href="#" class="contact__link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13"><g><g><g><g/><g/></g></g></g></svg></a>
+          <a href="#" class="contact__link contact__link--mail"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13"><g><g><g><g/><g/></g></g></g></svg></a>
           <a href="#" class="contact__link"></a>
         </div>
         <div id="map" class="map"></div>
@@ -768,6 +787,31 @@
         </div>
       </div>
     </footer>
+    <div class="page-overlay">
+      <div class="modal">
+        <form data-modal="form" action="POST" class="question-form call-form">
+          <a class="modal__close">&times;</a>
+          <fieldset>
+            <legend class="question-form__title">Leave a request and our manager will contact you shortly</legend>
+            <div class="question-form__input-box row justify-content-between">
+              <label class="question-form__input" for="name">
+                Name
+                <input name="name" type="text" placeholder="What is your name:">
+              </label>
+              <label class="question-form__input" for="phone">
+                Phone
+                <input name="phone" type="tel" placeholder="Your phone number:">
+              </label>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Your mail">
+            <input class="checkbox" type="checkbox" name="subm" id="subm" checked />
+            <label class="checkbox-label" for="subm">I agree to the processing of personal data</label>
+          </fieldset>
+          <button class="btn question-form__btn call-form__btn">Submit</button>
+        </form>
+      </div>
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f11229cb-b809-4dfd-8447-10fed030e362" type="text/javascript"></script>

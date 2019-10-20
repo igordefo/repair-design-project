@@ -56,6 +56,43 @@ Array.from(players).forEach(function(player) {
   player.addEventListener('click', loadPlayer, config);
 });
 
+// Modal window
+
+let callButton = document.querySelectorAll('[data-modal="call"]');
+let closeButton = document.querySelector('.modal__close');
+let overlay = document.querySelector('.page-overlay');
+let modal = document.querySelector('[data-modal="form"]');
+
+for (let i = 0; i < callButton.length; i++) {
+  callButton[i].addEventListener('click', function() {
+    console.log('click');
+    overlay.style.display = 'block';
+  });
+}
+
+function closeModal() {
+  overlay.style.display = 'none';
+}
+
+window.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    closeModal();
+  }
+});
+
+window.addEventListener('click', function(evt) {
+  if (evt.target == overlay) {
+    closeModal();
+  }
+});
+
+closeButton.addEventListener('click', function() {
+  closeModal();
+});
+
+// Slider
+
 $(document).ready(function() {
   $('.slider__gallery').slick({
     slidesToShow: 2,
@@ -96,4 +133,29 @@ $('.controls__right').click(function() {
 
 $('.controls__left').click(function() {
   $('.slider__info').slick('slickPrev');
+});
+
+$(document).ready(function() {
+  $('.gallery').slick({
+    slidesToShow: 1,
+    centerMode: false,
+    arrows: true,
+    variableWidth: false,
+    prevArrow: '<button class="slick-arr left-arrow"></button>',
+    nextArrow: '<button class="slick-arr right-arrow"></button>',
+    mobileFirst: true,
+    asNavFor: '.slider__gallery',
+    infinite: true,
+    speed: 300,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: 'unslick'
+      }
+    ]
+  });
+});
+
+$(window).on('resize orientationchange', function() {
+  $('.gallery').slick('resize');
 });
