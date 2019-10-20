@@ -6,6 +6,11 @@
   background-color: #000;
   color: #fff;
 
+  @media (max-width: 768px) {
+    background-color: $background-color;
+    min-width: 0;
+  }
+
   fieldset {
     margin: 0;
     padding: 0;

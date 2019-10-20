@@ -89,6 +89,10 @@
   transition: all ease-out 0.2s;
 }
 
+#slick-slide-control13::before {
+  background-color: #fff;
+}
+
 #slick-slide-control01::before {
   content: 'Sochi Thieves';
 }

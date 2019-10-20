@@ -1,12 +1,18 @@
 .contact {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-top: -22.8rem;
-  padding-top: 27.5rem;
-  padding-bottom: 6.6rem;
+  padding: 27.5rem 1.5rem 6.6rem 1.5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../assets/img/bg_contact.png);
-  z-index: -1;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 4rem 1.5rem;
+    background: 0;
+  }
 
   &__title {
     color: $primary-color;
@@ -15,6 +21,12 @@
     font-weight: 400;
     line-height: 2.813rem;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      margin-top: 4rem;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
   }
 
   &__links {
@@ -22,17 +34,34 @@
     justify-content: center;
     margin-top: 2.5rem;
     margin-bottom: 4.2rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
-    width: 2.8rem;
-    height: 2.9rem;
+    width: 4rem;
+    height: 4rem;
     background-color: $primary-color;
-    background-image: url(../assets/img/mail.svg);
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1.59375H4.00001C2.34316 1.59375 1.00001 2.9369 1.00001 4.59375V10.5938C1.00001 12.2506 2.34316 13.5938 4.00001 13.5938H10C11.6569 13.5938 13 12.2506 13 10.5938V4.59375C13 2.9369 11.6569 1.59375 10 1.59375Z' stroke='white' stroke-width='1.5'/%3E%3Cpath d='M9.40003 7.21593C9.47408 7.71528 9.38879 8.22526 9.15629 8.67334C8.92379 9.12142 8.55592 9.48478 8.10501 9.71173C7.6541 9.93869 7.1431 10.0177 6.6447 9.93749C6.14631 9.85729 5.68589 9.62198 5.32894 9.26503C4.97198 8.90807 4.73667 8.44766 4.65647 7.94926C4.57627 7.45086 4.65527 6.93987 4.88223 6.48896C5.10919 6.03804 5.47254 5.67018 5.92062 5.43768C6.3687 5.20518 6.87869 5.11988 7.37803 5.19393C7.88739 5.26946 8.35894 5.50681 8.72305 5.87091C9.08715 6.23502 9.3245 6.70658 9.40003 7.21593Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+
+    &--mail {
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.4 0.994141H13.6C14.37 0.994141 15 1.62414 15 2.39414V10.7941C15 11.5641 14.37 12.1941 13.6 12.1941H2.4C1.63 12.1941 1 11.5641 1 10.7941V2.39414C1 1.62414 1.63 0.994141 2.4 0.994141Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 2.39453L8 7.29453L1 2.39453' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
 
     &:not(:last-child) {
       margin-right: 1.5rem;
+    }
+
+    &:hover,
+    &:active {
+      background-color: darken($primary-color, 10%);
     }
   }
 }

@@ -7,14 +7,39 @@
   background-size: cover;
   line-height: 1;
 
+  @media (max-width: 768px) {
+    margin-top: -21rem;
+    padding: 0;
+    background: none;
+  }
+
   &__wrapper {
     position: relative;
     display: flex;
     width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__title {
     margin-bottom: 4.7rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 1.7rem;
+    }
+
+    @media (max-width: 1050px) and (min-width: 768px) {
+      margin-bottom: 54.7rem;
+      opacity: 0;
+    }
+  }
+
+  &__list {
+    @media (max-width: 1050px) {
+      display: none;
+    }
   }
 
   &__item {

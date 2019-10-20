@@ -6,6 +6,10 @@
   color: #363636;
   line-height: 1.1;
 
+  @media (max-width: 1200px) {
+    display: none;
+  }
+
   &__wrapper {
     flex-shrink: 0;
     position: relative;

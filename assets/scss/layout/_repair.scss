@@ -1,3 +1,9 @@
 .repair {
   padding-bottom: 15.2rem;
+
+  @media (max-width: 768px) {
+    padding-top: 8.3rem;
+    padding-bottom: 28.5rem;
+    background-color: #fff;
+  }
 }

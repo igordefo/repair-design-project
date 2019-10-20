@@ -1,8 +1,28 @@
 .question-form {
+  position: relative;
   margin: 0 auto;
   margin-top: -22.3rem;
   padding: 3.5rem 18.3rem;
   max-width: 88.4rem;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+    padding: 0 1.5rem;
+  }
+
+  &__input-box {
+    & > *:not(:last-child) {
+      margin-right: 5rem;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    flex: 1;
+  }
 
   legend {
     font-family: $font-family-title;
@@ -15,5 +35,9 @@
 
   &__btn {
     align-self: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 }

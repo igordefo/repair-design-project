@@ -11,6 +11,11 @@
     margin: 0 auto;
     padding: 2.3rem 0;
     transform: translateX(-1rem);
+
+    @media (max-width: 1286px) {
+      transform: translateX(0rem);
+      padding: 2.3rem 1.8rem;
+    }
   }
 
   &__hero {
@@ -23,13 +28,24 @@
 
   &__network {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 5.7%;
     background-color: $background-color;
 
     .logo {
+      top: 40%;
+      align-self: center;
       position: absolute;
       transform: rotate(90deg);
+    }
+
+    .btn {
+      align-self: flex-start;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
@@ -45,6 +61,16 @@
     background-position-x: left;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+      padding: 0 1.8rem;
+    }
+
+    @media (max-width: 500px) {
+      padding-top: 8.5rem;
+      padding-bottom: 6rem;
+      min-height: auto;
+    }
   }
 
   &__title {
@@ -53,6 +79,11 @@
     font-weight: 300;
     line-height: 5.391rem;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 2.3rem;
+      line-height: 3.055rem;
+    }
 
     span {
       color: #e3b873;
@@ -67,9 +98,27 @@
     font-weight: 400;
     line-height: 3.094rem;
     text-transform: none;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      line-height: 2.445rem;
+    }
+  }
+
+  &__buttons {
+    .btn {
+      @media (max-width: 500px) {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 
   &__buttons > *:not(:last-child) {
     margin-right: 2rem;
+
+    @media (max-width: 500px) {
+      margin-bottom: 2.5rem;
+    }
   }
 }

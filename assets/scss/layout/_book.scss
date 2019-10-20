@@ -1,6 +1,11 @@
 .book {
   color: #363636;
+  padding: 0 1.5rem;
   padding-bottom: 14.7rem;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0;
+  }
 
   &__wrapper {
     position: relative;
@@ -46,6 +51,11 @@
     margin-bottom: 9rem;
     text-align: center;
 
+    @media (max-width: 768px) {
+      color: #fff;
+      font-size: 1.4rem;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -54,6 +64,10 @@
       height: 0.2rem;
       border-radius: 3rem;
       background-color: #e3b873;
+
+      @media (max-width: 768px) {
+        margin: 2.8rem auto 2.1rem auto;
+      }
     }
   }
 }

@@ -12,4 +12,12 @@
     margin-bottom: 3.8rem;
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 1050px) {
+    padding-top: 4rem;
+  }
 }

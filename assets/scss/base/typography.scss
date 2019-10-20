@@ -11,6 +11,10 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    background-color: $background-color;
+  }
 }
 
 // Titles
@@ -23,6 +27,11 @@ body {
   letter-spacing: -0.189rem;
   line-height: 3.797rem;
   text-transform: uppercase;
+
+  @media (max-width: 895px) {
+    font-size: 2.2rem;
+    text-align: center;
+  }
 }
 
 .heading {

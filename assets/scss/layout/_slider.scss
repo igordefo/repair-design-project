@@ -4,12 +4,21 @@
     margin-right: 5rem;
     width: calc(34%);
     vertical-align: top;
+
+    @media (max-width: 895px) {
+      width: 100%;
+    }
   }
 
   &__text {
     margin-top: 3rem;
     margin-bottom: 2rem;
     line-height: 2.953rem;
+
+    @media (max-width: 895px) {
+      text-align: center;
+      font-size: 1.4rem;
+    }
   }
 
   &__details {
@@ -38,20 +47,39 @@
     &-top {
       margin-bottom: 2rem;
     }
+
+    @media (max-width: 895px) {
+      margin-bottom: 0;
+      padding-top: 27rem;
+    }
   }
 
   &__photo {
     position: absolute;
     display: inline-block;
     width: calc(72.5% - 5rem);
+
+    @media (max-width: 895px) {
+      width: 100%;
+      top: 30%;
+    }
   }
 
   .slick-track,
   &__gallery {
     max-height: 48.3rem;
+
+    @media (max-width: 895px) {
+      max-height: none;
+    }
   }
 
   &__picture {
     margin-right: 2rem;
+
+    @media (max-width: 895px) {
+      width: 34rem;
+      height: 24.2rem;
+    }
   }
 }

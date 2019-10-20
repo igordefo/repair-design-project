@@ -5,6 +5,12 @@
   color: #363636;
   z-index: 2;
 
+  @media (max-width: 1080px) {
+    padding: 3rem 2.3rem 3rem;
+    margin-top: 10rem;
+    background-color: $background-color;
+  }
+
   &__description {
     margin-bottom: 7.5rem;
     color: #fff;
@@ -14,6 +20,11 @@
   &__list {
     display: flex;
     justify-content: center;
+
+    @media (max-width: 1050px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -21,6 +32,11 @@
 
     &:not(:last-child) {
       margin-right: 10.5rem;
+
+      @media (max-width: 1050px) {
+        margin-right: 0;
+        margin-bottom: 10.5rem;
+      }
     }
 
     &::before {
@@ -87,6 +103,14 @@
   &__text {
     margin-top: 5.3rem;
     text-align: center;
+
+    @media (max-width: 1080px) {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     &::before {
       content: '';

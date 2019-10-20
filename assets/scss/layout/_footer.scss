@@ -1,3 +1,7 @@
 .footer {
   background-color: $background-color;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
