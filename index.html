@@ -194,43 +194,43 @@
                   <div class="slider__gallery carouselItem">
                     <picture class="slider__picture">
                       <source
-                        srcset="assets/img/project-1.webp"
+                        data-lazy="assets/img/project-1.webp"
                         type="image/webp"
                       />
                       <source
-                        srcset="assets/img/project-1.jpg"
+                        data-lazy="assets/img/project-1.jpg"
                         media="(max-width: 768px)"
                       />
                       <img
-                        src="assets/img/project-1.png"
+                        data-lazy="assets/img/project-1.png"
                         alt="Rostov-on-Don LCD admiral"
                       />
                     </picture>
                     <picture class="slider__picture">
                       <source
-                        srcset="assets/img/project-2.webp"
+                        data-lazy="assets/img/project-2.webp"
                         type="image/webp"
                       />
                       <source
-                        srcset="assets/img/project-2.jpg"
+                        data-lazy="assets/img/project-2.jpg"
                         media="(max-width: 768px)"
                       />
                       <img
-                        src="assets/img/project-2.png"
+                        data-lazy="assets/img/project-2.png"
                         alt="Rostov-on-Don LCD admiral"
                       />
                     </picture>
                     <picture class="slider__picture">
                       <source
-                        srcset="assets/img/project-1.webp"
+                        data-lazy="assets/img/project-1.webp"
                         type="image/webp"
                       />
                       <source
-                        srcset="assets/img/project-1.jpg"
+                        data-lazy="assets/img/project-1.jpg"
                         media="(max-width: 768px)"
                       />
                       <img
-                        src="assets/img/project-1.png"
+                        data-lazy="assets/img/project-1.png"
                         alt="Rostov-on-Don LCD admiral"
                       />
                     </picture>
@@ -264,7 +264,7 @@
           </span>
           <div class="video overlay" data-video-id="tgbNymZ7vqY">
 
-            <img src="assets/img/video-poster.jpg" alt="custom-preview">
+            <img data-lazy="assets/img/video-poster.jpg" alt="custom-preview">
             <button class="play-pause"></button>
           </div>
           <p class="book__text">
@@ -302,7 +302,10 @@
             <ul class="card__list">
               <li class="card__item">
                 <div class="card__image-box">
-                  <img src="assets/img/repair-1.jpg" alt="Repair photo" class="card__image">
+                  <picture class="card__image">
+                    <source type="image/webp" data-lazy="assets/img/repair-1.webp">
+                    <img data-lazy="assets/img/repair-1.jpg" alt="Repair photo" >
+                  </picture>
                 </div>
                 <div class="card__info">
                   <h3 class="card__title">Redecorating</h3>
@@ -320,7 +323,10 @@
               </li>
               <li class="card__item">
                 <div class="card__image-box">
-                  <img src="assets/img/repair-2.jpg" alt="Repair photo" class="card__image">
+                  <picture class="card__image">
+                    <source type="image/webp" data-lazy="assets/img/repair-2.webp">
+                    <img data-lazy="assets/img/repair-2.jpg" alt="Repair photo">
+                  </picture>
                 </div>
                 <div class="card__info">
                   <h3 class="card__title">Overhaul</h3>
@@ -338,7 +344,10 @@
               </li>
               <li class="card__item">
                 <div class="card__image-box">
-                  <img src="assets/img/repair-3.jpg" alt="Repair photo" class="card__image">
+                  <picture class="card__image">
+                    <source type="image/webp" data-lazy="assets/img/repair-3.webp">
+                    <img data-lazy="assets/img/repair-3.jpg" alt="Repair photo">
+                  </picture>
                 </div>
                 <div class="card__info">
                   <h3 class="card__title">Designer Repair</h3>
@@ -439,24 +448,24 @@
               </div>
               <div class="gallery">
                 <picture class="gallery__image">
-                  <source media="(max-width: 768px)" srcset="assets/img/gallery-1.jpg">
-                  <img src="assets/img/gallery-1.png" alt="Gallery">
+                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-1.jpg">
+                  <img data-lazy="assets/img/gallery-1.png" alt="Gallery">
                 </picture>
                 <picture class="gallery__image">
-                  <source media="(max-width: 768px)" srcset="assets/img/gallery-2.jpg">
-                  <img src="assets/img/gallery-2.png" alt="Gallery">
+                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-2.jpg">
+                  <img data-lazy="assets/img/gallery-2.png" alt="Gallery">
                 </picture>
                 <picture class="gallery__image">
-                  <source media="(max-width: 768px)" srcset="assets/img/gallery-3.jpg">
-                  <img src="assets/img/gallery-3.png" alt="Gallery">
+                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-3.jpg">
+                  <img data-lazy="assets/img/gallery-3.png" alt="Gallery">
                 </picture>
                 <picture class="gallery__image">
-                  <source media="(max-width: 768px)" srcset="assets/img/gallery-4.jpg">
-                  <img src="assets/img/gallery-4.png" alt="Gallery">
+                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-4.jpg">
+                  <img data-lazy="assets/img/gallery-4.png" alt="Gallery">
                 </picture>
                 <picture class="gallery__image gallery__image--hide">
-                  <source media="(max-width: 768px)" srcset="assets/img/gallery-2.jpg">
-                  <img src="assets/img/bg_catalog.png" alt="Gallery">
+                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-2.jpg">
+                  <img data-lazy="assets/img/bg_catalog.png" alt="Gallery">
                 </picture>
               </div>
             </div>
@@ -479,7 +488,10 @@
             <ul class="card__list design__list">
               <li class="card__item">
                 <div class="card__image-box">
-                  <img src="assets/img/repair-1.jpg" alt="Repair photo" class="card__image">
+                  <picture class="card__image">
+                    <source type="image/webp" data-lazy="assets/img/repair-1.webp">
+                    <img src="assets/img/repair-1.jpg" alt="Repair photo" >
+                  </picture>
                 </div>
                 <div class="card__info">
                   <h3 class="card__title">Mini</h3>
@@ -494,7 +506,10 @@
               </li>
               <li class="card__item">
                 <div class="card__image-box">
-                  <img src="assets/img/repair-3.jpg" alt="Repair photo" class="card__image">
+                  <picture class="card__image">
+                    <source type="image/webp" data-lazy="assets/img/repair-3.webp">
+                    <img data-lazy="assets/img/repair-3.jpg" alt="Repair photo">
+                  </picture>
                 </div>
                 <div class="card__info">
                   <h3 class="card__title">Standard</h3>
@@ -512,7 +527,10 @@
               </li>
               <li class="card__item">
                 <div class="card__image-box">
-                  <img src="assets/img/repair-2.jpg" alt="Repair photo" class="card__image">
+                  <picture class="card__image">
+                    <source type="image/webp" data-lazy="assets/img/repair-2.webp">
+                    <img data-lazy="assets/img/repair-2.jpg" alt="Repair photo">
+                  </picture>
                 </div>
                 <div class="card__info">
                   <h3 class="card__title">Full</h3>
@@ -589,7 +607,7 @@
               <picture class="slider-steps__photo">
                 <source srcset="assets/img/steps-1.webp" type="image/webp">
                 <source media="(max-width: 768px)" srcset="assets/img/steps-1.jpg">
-                <img src="assets/img/steps-1.png" alt="Steps">
+                <img data-lazy="assets/img/steps-1.png" alt="Steps">
               </picture>
             </div>
           </div>
@@ -623,7 +641,10 @@
         </p>
         <ul class="team__list">
           <li class="team__item">
-            <img src="assets/img/team-1.jpg" alt="Team" class="team__photo">
+            <picture class="team__photo">
+              <source type="image/webp" data-lazy="assets/img/team-1.webp">
+              <img data-lazy="assets/img/team-1.jpg" alt="Team">
+            </picture>
             <div class="team__info">
               <h3 class="team__name">Dmitry tulyakov</h3>
               <p class="team__post">Project manager</p>
@@ -631,7 +652,10 @@
             </div>
           </li>
           <li class="team__item team__item--2">
-            <img src="assets/img/team-2.jpg" alt="Team" class="team__photo">
+            <picture class="team__photo">
+              <source type="image/webp" data-lazy="assets/img/team-2.webp">
+              <img data-lazy="assets/img/team-2.jpg" alt="Team">
+            </picture>
             <div class="team__info">
               <h3 class="team__name">Larisa Kotlyarova</h3>
               <p class="team__post">Designer</p>
@@ -639,7 +663,10 @@
             </div>
           </li>
           <li class="team__item team__item--3">
-            <img src="assets/img/team-3.jpg" alt="Team" class="team__photo">
+            <picture class="team__photo">
+              <source type="image/webp" data-lazy="assets/img/team-3.webp">
+              <img data-lazy="assets/img/team-3.jpg" alt="Team">
+            </picture>
             <div class="team__info">
               <h3 class="team__name">Alexey Efimov</h3>
               <p class="team__post">Foreman</p>
