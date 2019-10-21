@@ -162,6 +162,14 @@ const lazyLoad = target => {
 
 images.forEach(lazyLoad);
 
+// Preloader
+
+const loader = document.querySelector('.preload');
+
+window.addEventListener('load', function() {
+  loader.classList.add('hidden');
+});
+
 // Yandex map
 
 ymaps.ready(init);

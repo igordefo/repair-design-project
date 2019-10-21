@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="dist/slick.css" />
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="preload" href="dist/style.css" as="style" onload="this.rel='stylesheet'"/>
     <title>IC "Repair Design Project"</title>
   </head>
   <body>
@@ -194,43 +194,43 @@
                   <div class="slider__gallery carouselItem">
                     <picture class="slider__picture">
                       <source
-                        data-lazy="assets/img/project-1.webp"
+                        srcset="assets/img/project-1.webp"
                         type="image/webp"
                       />
                       <source
-                        data-lazy="assets/img/project-1.jpg"
+                        srcset="assets/img/project-1.jpg"
                         media="(max-width: 768px)"
                       />
                       <img
-                        data-lazy="assets/img/project-1.png"
+                        src="assets/img/project-1.png"
                         alt="Rostov-on-Don LCD admiral"
                       />
                     </picture>
                     <picture class="slider__picture">
                       <source
-                        data-lazy="assets/img/project-2.webp"
+                        srcset="assets/img/project-2.webp"
                         type="image/webp"
                       />
                       <source
-                        data-lazy="assets/img/project-2.jpg"
+                        srcset="assets/img/project-2.jpg"
                         media="(max-width: 768px)"
                       />
                       <img
-                        data-lazy="assets/img/project-2.png"
+                        src="assets/img/project-2.png"
                         alt="Rostov-on-Don LCD admiral"
                       />
                     </picture>
                     <picture class="slider__picture">
                       <source
-                        data-lazy="assets/img/project-1.webp"
+                        srcset="assets/img/project-1.webp"
                         type="image/webp"
                       />
                       <source
-                        data-lazy="assets/img/project-1.jpg"
+                        srcset="assets/img/project-1.jpg"
                         media="(max-width: 768px)"
                       />
                       <img
-                        data-lazy="assets/img/project-1.png"
+                        src="assets/img/project-1.png"
                         alt="Rostov-on-Don LCD admiral"
                       />
                     </picture>
@@ -448,23 +448,23 @@
               </div>
               <div class="gallery">
                 <picture class="gallery__image">
-                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-1.jpg">
-                  <img data-lazy="assets/img/gallery-1.png" alt="Gallery">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-1.jpg">
+                  <img src="assets/img/gallery-1.png" alt="Gallery">
                 </picture>
                 <picture class="gallery__image">
-                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-2.jpg">
-                  <img data-lazy="assets/img/gallery-2.png" alt="Gallery">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-2.jpg">
+                  <img src="assets/img/gallery-2.png" alt="Gallery">
                 </picture>
                 <picture class="gallery__image">
-                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-3.jpg">
-                  <img data-lazy="assets/img/gallery-3.png" alt="Gallery">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-3.jpg">
+                  <img src="assets/img/gallery-3.png" alt="Gallery">
                 </picture>
                 <picture class="gallery__image">
-                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-4.jpg">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-4.jpg">
                   <img data-lazy="assets/img/gallery-4.png" alt="Gallery">
                 </picture>
                 <picture class="gallery__image gallery__image--hide">
-                  <source media="(max-width: 768px)" data-lazy="assets/img/gallery-2.jpg">
+                  <source media="(max-width: 768px)" srcset="assets/img/gallery-2.jpg">
                   <img data-lazy="assets/img/bg_catalog.png" alt="Gallery">
                 </picture>
               </div>
@@ -605,8 +605,8 @@
                     He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
               </div>
               <picture class="slider-steps__photo">
-                <source srcset="assets/img/steps-1.webp" type="image/webp">
-                <source media="(max-width: 768px)" srcset="assets/img/steps-1.jpg">
+                <source data-lazy="assets/img/steps-1.webp" type="image/webp">
+                <source media="(max-width: 768px)" data-lazy="assets/img/steps-1.jpg">
                 <img data-lazy="assets/img/steps-1.png" alt="Steps">
               </picture>
             </div>
@@ -838,6 +838,9 @@
           <button class="btn question-form__btn call-form__btn">Submit</button>
         </form>
       </div>
+    </div>
+    <div class="preload">
+      <div class="pulse"></div>
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
