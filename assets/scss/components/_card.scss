@@ -23,7 +23,7 @@
     overflow: hidden;
   }
 
-  &__image {
+  &__image img {
     @include transition;
   }
 
@@ -89,6 +89,6 @@
   }
 }
 
-.card__item:hover .card__image {
+.card__item:hover .card__image img {
   transform: scale(1.1);
 }

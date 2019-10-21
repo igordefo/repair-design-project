@@ -1,10 +1,12 @@
+// Fonts
+@import './base/fonts.scss';
+
 // Abstracts
 @import './abstracts/variables.scss';
 @import './abstracts/mixins.scss';
 @import './abstracts/function.scss';
 
 // Base
-@import './base/fonts.scss';
 @import './base/grid.scss';
 @import './base/helpers.scss';
 @import './base/typography.scss';
@@ -28,6 +30,7 @@
 @import './components/question-form';
 @import './components/map';
 @import './components/modal';
+@import './components/preload';
 
 // Blocks
 @import './layout/header';
